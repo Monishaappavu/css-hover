@@ -1,0 +1,51 @@
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<style>  
+   body{  
+      text-align:center;  
+   }  
+* {box-sizing: border-box;}  
+  
+.container {  
+  position: relative;  
+  width: 50%;  
+  max-width: 300px;  
+}  
+  
+.image {  
+  display: block;  
+  width: 100%;  
+  height: auto;  
+}  
+  
+.overlay {  
+  position: absolute;   
+  bottom: 0;   
+  background: rgba(0, 0, 0, 0.2);   
+  width: 100%;  
+  opacity:0;   
+  transition: .9s ease;  
+  font-size: 25px;
+  padding: 20px;  
+}  
+  
+.container:hover .overlay {  
+  opacity: 1.5;  
+}  
+</style>  
+</head>  
+<body>  
+  
+<h1>Image Overlay Title Effect</h1>  
+<h2>Move your mouse over the image to see the effect.</h2>  
+  
+<center>  
+<div class="container">  
+      <img src="my.jpg" class="image">  
+      <div style="color:white;"class="overlay">Welcome Css Hover</div>  
+</div> </center>  
+  
+  
+</body>  
+</html>
